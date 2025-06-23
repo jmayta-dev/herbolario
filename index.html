@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Álbum de Plantas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      :root {
+        --primary-color: #4E694D;
+        --secondary-color: #ADB405;
+        --light-color: #FFFD91;
+        --pale-color: #DDEEAA;
+        --accent-color: #CEC367;
+        --white-color: #FFFFFF;
+      }
+      .navbar, .footer {
+        background-color: var(--primary-color) !important;
+      }
+      .navbar-brand, .nav-link, .footer-text {
+        color: var(--white-color) !important;
+      }
+      .card-header {
+        background-color: var(--pale-color) !important;
+        color: var(--primary-color) !important;
+      }
+      .card-body {
+        background-color: var(--light-color) !important;
+      }
+      .btn-primary {
+        background-color: var(--secondary-color) !important;
+        border-color: var(--secondary-color) !important;
+      }
+      .btn-primary:hover {
+        background-color: var(--accent-color) !important;
+        border-color: var(--accent-color) !important;
+      }
+      .text-body-secondary {
+        color: var(--primary-color) !important;
+      }
+      .album {
+        background-color: var(--white-color) !important;
+      }
+      /* Ajuste para el navbar fijo */
+      body {
+        padding-top: 56px; /* Altura aproximada del navbar fijo */
+      }
+      @media (min-width: 768px) {
+        body {
+          padding-top: 60px; /* Ajuste para pantallas más grandes si el navbar es más alto */
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <header data-bs-theme="dark">
+      <div class="navbar navbar-dark shadow-sm fixed-top"> <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <strong>Álbum de Plantas</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarHeader">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a href="#anacardiaceae" class="nav-link">Anacardiaceae</a></li>
+              <li class="nav-item"><a href="#rosaceae" class="nav-link">Rosaceae</a></li>
+              <li class="nav-item"><a href="#butalaceae" class="nav-link">Butalaceae</a></li>
+              <li class="nav-item"><a href="#polemoniaceae" class="nav-link">Polemoniaceae</a></li>
+              <li class="nav-item"><a href="#asteraceae" class="nav-link">Asteraceae</a></li>
+              <li class="nav-item"><a href="#fabaceae" class="nav-link">Fabaceae</a></li>
+              <li class="nav-item"><a href="#poaceae" class="nav-link">Poaceae</a></li>
+              <li class="nav-item"><a href="#scrophulariaceae" class="nav-link">Scrophulariaceae</a></li>
+              <li class="nav-item"><a href="#escalloniaceae" class="nav-link">Escalloniaceae</a></li>
+              <li class="nav-item"><a href="#oxalidadceae" class="nav-link">Oxalidaceae</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Nuestra Colección de Plantas</h1>
+            <p class="lead text-body-secondary">Explora una variedad de plantas, agrupadas por sus familias, con datos interesantes y sus orígenes.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+
+          <h2 class="mb-4" id="anacardiaceae">Familia: Anacardiaceae</h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://placehold.co/600x400" class="img-fluid" alt="Molle">
+                <div class="card-header">
+                  <h5 class="card-title">Molle</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><i>Snichus molle</i></h6>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Información:</strong>
+                    <ul>
+                      <li>Familia: Anacardiaceae</li>
+                      <li>Género: Snichus</li>
+                      <li>Tipo de hoja: Compuestas, imparipinnadas y alternas</li>
+                      <li>Flor: Unisexual y hermafrodita</li>
+                      <li>Fruto: Es una drupa y comestible</li>
+                      <li>Origen: Nativo de los Andes peruanos</li>
+                      <li>Distribución geográfica: Andes sudamericanos, México, Estados Unidos, Europa y África-Oceanía</li>
+                      <li>Curiosidades: Se usa para hacer chicha</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="mb-4" id="rosaceae">Familia: Rosaceae</h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://placehold.co/600x400" class="img-fluid" alt="Quinual">
+                <div class="card-header">
+                  <h5 class="card-title">Quinual</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><i>Polylepis racemosa</i></h6>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Información:</strong>
+                    <ul>
+                      <li>Familia: Rosaceae</li>
+                      <li>Género: Polylepis</li>
+                      <li>Hojas: Compuestas, perennes y con foliolos</li>
+                      <li>Flor: Son de tipo racimo o espiga</li>
+                      <li>Fruto: Son de 2 mm</li>
+                      <li>Origen: Se encuentra en la región andina de América del Sur</li>
+                      <li>Distribución geográfica: Abarca la cordillera andina desde Venezuela hasta Patagonia</li>
+                      <li>Curiosidades: Su corteza se desprende en finas láminas multicapa ("polylepis") para protegerse del frío y fuego</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="mb-4" id="butalaceae">Familia: Butalaceae</h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://placehold.co/600x400" class="img-fluid" alt="Aliso">
+                <div class="card-header">
+                  <h5 class="card-title">Aliso</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><i>Alnus glutinosa</i></h6>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Información:</strong>
+                    <ul>
+                      <li>Familia: Butalaceae</li>
+                      <li>Género: Alnus</li>
+                      <li>Hoja: Es simple, alterna y pueden ser ovaladas</li>
+                      <li>Flor: Son de tipo amentos</li>
+                      <li>Fruto: Son de tipo leñoso</li>
+                      <li>Origen: Nativo de América del Sur y Centroamérica</li>
+                      <li>Distribución geográfica: Se extiende naturalmente desde el sur de México y Centroamérica, por los Andes, hasta el norte de Argentina</li>
+                      <li>Curiosidades: Madera valiosa: ligera, homogénea, útil para vigas, utensilios, carpintería no estructural, carbón, papel y muebles. Importancia ecológica: fija nitrógeno, mejora humus del suelo y protege taludes, favoreciendo la recuperación de suelos degradados</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="mb-4" id="polemoniaceae">Familia: Polemoniaceae</h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://placehold.co/600x400" class="img-fluid" alt="Cantuta">
+                <div class="card-header">
+                  <h5 class="card-title">Cantuta</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><i>Cantua buxifoolia</i></h6>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Información:</strong>
+                    <ul>
+                      <li>Familia: Polemoniaceae</li>
+                      <li>Género: Cantua</li>
+                      <li>Hoja: Opuesta, simple, elíptica y glabra</li>
+                      <li>Flor: Son de color rojo intenso, de 7 cm de largo y de forma tubular</li>
+                      <li>Fruto: Es una cápsula de forma alargada y estrecha, y puede llegar a medir varios centímetros de largo</li>
+                      <li>Origen: Planta nativa de los Andes centrales, especialmente de Perú y Bolivia</li>
+                      <li>Distribución geográfica: Crece en los Andes de Perú y Bolivia, extendiéndose ocasionalmente a Ecuador y el sur de Colombia</li>
+                      <li>Curiosidades: Flor nacional de Perú y Bolivia, venerada desde tiempos incas como "flor sagrada del Inca". Medicinal: infusiones contra diarrea, tos, ictericia, y para inflamación ocular</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="mb-4" id="asteraceae">Familia: Asteraceae</h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://placehold.co/600x400" class="img-fluid" alt="Chilca">
+                <div class="card-header">
+                  <h5 class="card-title">Chilca</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><i>Baccharis latifolia</i></h6>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Información:</strong>
+                    <ul>
+                      <li>Familia: Asteraceae</li>
+                      <li>Género: Baccharis</li>
+                      <li>Hoja: Es simple, de color verde y de forma ovalada</li>
+                      <li>Flor: Es de color blanco con forma tubular</li>
+                      <li>Fruto: Es alargado y estrecho de color marrón con una sola semilla</li>
+                      <li>Origen: Nativa del continente americano, perteneciente a la familia Asteraceae. Proviene de Sudamérica</li>
+                      <li>Distribución geográfica: Abarca desde el sur de México y EE. UU., extendiéndose por toda la región andina sudamericana hasta el centro de Argentina y Chile</li>
+                      <li>Curiosidades: Medicina tradicional: usada para tratar reumatismos, bronquitis, gripe, diarrea, inflamaciones, quemaduras, fracturas y más</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://placehold.co/600x400" class="img-fluid" alt="Chimchircuma">
+                <div class="card-header">
+                  <h5 class="card-title">Chimchircuma</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><i>Mutisia acuminata</i></h6>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Información:</strong>
+                    <ul>
+                      <li>Familia: Asteraceae</li>
+                      <li>Género: Mutisia</li>
+                      <li>Hoja: Es simple, lanceolada, acuminada y serrada</li>
+                      <li>Flor: Es de color rojo, con forma tubular y pequeña</li>
+                      <li>Fruto: Es seco que contiene una sola semilla y es de color marrón</li>
+                      <li>Origen: Andina nativa representativa de Sudamérica</li>
+                      <li>Distribución geográfica: Se encuentra desde Perú y Ecuador hasta Bolivia, e incluso hacia Argentina y Chile</li>
+                      <li>Curiosidades: Medicinal ancestral: cocimientos de hojas se usaban para limpiar heridas y tratar problemas respiratorios</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://placehold.co/600x400" class="img-fluid" alt="Marco">
+                <div class="card-header">
+                  <h5 class="card-title">Marco</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><i>Ambrosia peruviana</i></h6>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Información:</strong>
+                    <ul>
+                      <li>Familia: Asteraceae</li>
+                      <li>Género: Ambrosia</li>
+                      <li>Hoja: Es grande, alternada y pinnada con colores verde y aterciopelado</li>
+                      <li>Flor: Es de color grisáceo</li>
+                      <li>Fruto: Es anguloso y espinoso de 3-4 mm</li>
+                      <li>Origen: Originaria principalmente de la cordillera andina</li>
+                      <li>Distribución geográfica: Se distribuye en Perú, Bolivia, Colombia, Ecuador, México, y zonas del Caribe como Puerto Rico y Jamaica</li>
+                      <li>Curiosidades: Combate dolor de cabeza, migrañas, reumatismo, cólicos, fiebre, problemas digestivos, bronquitis, toses y más</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://placehold.co/600x400" class="img-fluid" alt="Huamanpinta">
+                <div class="card-header">
+                  <h5 class="card-title">Huamanpinta</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><i>Chuquiraga spinosa</i></h6>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Información:</strong>
+                    <ul>
+                      <li>Familia: Asteraceae</li>
+                      <li>Género: Chuquiragua</li>
+                      <li>Hoja: Es de tipo alargada y estrecha de color verde con un borde entero</li>
+                      <li>Flor: Es de color amarillo de forma alargada y tubular</li>
+                      <li>Fruto: Es alargado y estrecho de color marrón y puede tener vilos</li>
+                      <li>Origen: Planta andina nativa de Perú y Bolivia</li>
+                      <li>Distribución geográfica: Crece en la cordillera andina de Perú y Bolivia</li>
+                      <li>Curiosidades: Usos tradicionales: como desinflamante, diurético, antiséptico, regulador del hígado y limpiador sanguíneo</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="mb-4" id="fabaceae">Familia: Fabaceae</h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://placehold.co/600x400" class="img-fluid" alt="Retama">
+                <div class="card-header">
+                  <h5 class="card-title">Retama</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><i>Retama</i></h6>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Información:</strong>
+                    <ul>
+                      <li>Familia: Fabaceae</li>
+                      <li>Género: Retama raf.</li>
+                      <li>Hoja: Es pequeña y trifoliada, son de color verde grisáceo de forma lanceolada</li>
+                      <li>Flor: Es de color amarillo brillante y de forma de barquito de 5-8 mm</li>
+                      <li>Fruto: Es una legumbre de forma ovalada, es de color amarillo paja o de color pardo oscuro</li>
+                      <li>Origen: Es originaria del Mediterráneo (sur de Europa, noroeste de África y sudoeste de Asia)</li>
+                      <li>Distribución geográfica: Se encuentra asilvestrada e invasiva en Perú, Bolivia, Chile, Argentina, así como en EE.UU. y Australia</li>
+                      <li>Curiosidades: Clima: tolera ambientes áridos a templados, buena adaptabilidad a la sequía</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://placehold.co/600x400" class="img-fluid" alt="Tara">
+                <div class="card-header">
+                  <h5 class="card-title">Tara</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><i>Caesalpinia spinosa</i></h6>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Información:</strong>
+                    <ul>
+                      <li>Familia: Fabaceae</li>
+                      <li>Género: Caesalpinia</li>
+                      <li>Hoja: Es bipinnada de color verde oscuro en el haz, midiendo 10-20 cm de largo</li>
+                      <li>Flor: Es pequeña y agrupada en racimos de color amarillo brillante, mide de 1-2 cm de diámetro</li>
+                      <li>Fruto: Es de color verde cuando está inmaduro y marrón cuando está maduro</li>
+                      <li>Origen: Nativa de América del Sur, especialmente de Perú, Ecuador, Colombia y Chile</li>
+                      <li>Distribución geográfica: Se encuentra en zonas áridas y semiáridas entre los 4° y 32° de latitud sur</li>
+                      <li>Curiosidades: Puede tratar la fiebre, la diarrea y los problemas de la piel</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="mb-4" id="poaceae">Familia: Poaceae</h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://placehold.co/600x400" class="img-fluid" alt="Ichu">
+                <div class="card-header">
+                  <h5 class="card-title">Ichu</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><i>Stipa ichu</i></h6>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Información:</strong>
+                    <ul>
+                      <li>Familia: Poaceae</li>
+                      <li>Género: Stipa</li>
+                      <li>Hoja: Es de forma alargada y estrecha de color verde</li>
+                      <li>Flor: Es larga y estrecha de color verde o púrpura y con aristas largas y delgadas</li>
+                      <li>Fruto: Es seco y pequeño de forma alargada y estrecha de color marrón o dorado</li>
+                      <li>Origen: Nativa de América, especialmente de los Andes</li>
+                      <li>Distribución geográfica: Presente en altitudes del altiplano andino: México, Centroamérica, hasta Argentina y Chile</li>
+                      <li>Curiosidades: Estructura boscosa: puede alcanzar 1–1,8 m de altura, formando densas panículas argénteas que dan un aspecto plateado a los pajonales</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="mb-4" id="scrophulariaceae">Familia: Scrophulariaceae</h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://placehold.co/600x400" class="img-fluid" alt="Quishuar">
+                <div class="card-header">
+                  <h5 class="card-title">Quishuar</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><i>Buddleja incana</i></h6>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Información:</strong>
+                    <ul>
+                      <li>Familia: Scrophulariaceae</li>
+                      <li>Género: Buddleja</li>
+                      <li>Hoja: Son lanceoladas de color verde oscuro en el haz con un borde entero</li>
+                      <li>Flor: Es de color blanco con forma tubular, se agrupan en racimos</li>
+                      <li>Fruto: Es una cápsula pequeña y seca que se abre en dos valvas de color marrón</li>
+                      <li>Origen: Nativa de los Andes, específicamente en Perú, Bolivia, Ecuador y Colombia</li>
+                      <li>Distribución geográfica: Andes centrales: Perú, Bolivia, Ecuador y Colombia</li>
+                      <li>Curiosidades: Tiene propiedades antiinflamatorias, antioxidantes y antimicrobianas. Trata la tos, el resfriado y los problemas digestivos</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="mb-4" id="escalloniaceae">Familia: Escalloniaceae</h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://placehold.co/600x400" class="img-fluid" alt="Chachacoma">
+                <div class="card-header">
+                  <h5 class="card-title">Chachacoma</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><i>Escallonia resinosa</i></h6>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Información:</strong>
+                    <ul>
+                      <li>Familia: Escalloniaceae</li>
+                      <li>Género: Escallonia</li>
+                      <li>Hoja: Es simple y alterna de forma ovalada con un borde serrado</li>
+                      <li>Flor: Es pequeña de color blanco o rosado con forma tubular</li>
+                      <li>Fruto: Es una cápsula pequeña y seca que se abre en dos valvas cuando madura</li>
+                      <li>Origen: Nativa de la región andina, adaptada a las condiciones climáticas y geográficas de las zonas altas de la cordillera</li>
+                      <li>Distribución geográfica: Se encuentra en los Andes de Perú, Bolivia, Ecuador y Chile</li>
+                      <li>Curiosidades: Puede tratar diversas afecciones, como el dolor de cabeza, la fiebre y los problemas respiratorios</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="mb-4" id="oxalidadceae">Familia: Oxalidaceae</h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://placehold.co/600x400" class="img-fluid" alt="Oca">
+                <div class="card-header">
+                  <h5 class="card-title">Oca</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><i>Oxalis tuberosa</i></h6>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Información:</strong>
+                    <ul>
+                      <li>Familia: Oxalidaceae</li>
+                      <li>Género: Oxalis</li>
+                      <li>Hoja: Es compuesta que puede tener un ápice agudo u obtuso que puede ser de color verde o rojizo</li>
+                      <li>Flor: Es pequeña de color amarillo, blanco o rosa</li>
+                      <li>Fruto: Es una cápsula pequeña y seca que se abre cuando madura</li>
+                      <li>Origen: Nativa de los Andes de América del Sur</li>
+                      <li>Distribución geográfica: Se encuentra en zonas montañosas y valles interandinos de la cordillera de los Andes</li>
+                      <li>Curiosidades: Tiene un sabor dulce y ligeramente ácido</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="text-body-secondary py-5 footer">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#" class="footer-text">Volver arriba</a>
+        </p>
+        <p class="mb-1 footer-text">Álbum de Plantas</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
