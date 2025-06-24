@@ -22,7 +22,7 @@
       "label": "Example of the app interface on mobile"
     }
   ],
-    "start_url": "/",
+    "start_url": "/herbolario/index.html",
     "display": "standalone",
     "background_color": "#4E694D",
     "theme_color": "#ADB405",
