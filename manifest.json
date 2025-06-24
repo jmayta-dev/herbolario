@@ -1,0 +1,31 @@
+{
+    "short_name": "HERB",
+    "name": "Herbolario",
+    "icons": [
+        {
+            "src": "img/icon128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "img/plant256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+    {
+      "src": "img/herbolario_screenshot.png",
+      "sizes": "800x1772",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Example of the app interface on mobile"
+    }
+  ],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#4E694D",
+    "theme_color": "#ADB405",
+    "orientation": "portrait",
+    "categories": ["plants"]
+}
